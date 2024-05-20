@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Canvas</title>
+  <link rel="icon" type="image/x-icon" href="./media/favicon.png" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- <link rel="stylesheet" href="styles.css" /> -->
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+    }
+
+    #canvas {
+      background-color: black;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <p id="p"></p> -->
+  <canvas id="canvas"></canvas>
+  <script>
+    // p = document.getElementById('p')
+    canvas = document.getElementById("canvas");
+    canvas.width = document.body.clientWidth; //document.width is obsolete
+    canvas.height = document.body.clientHeight; //document.height is obsolete
+    // p.innerText = canvas.clientHeight
+    ctx = canvas.getContext("2d");
+
+    ctx.strokeStyle = 'white'
+    function drawCircle(x) {
+      ctx.fillStyle = "red"
+      ctx.strokeStyle = 'white'
+      ctx.beginPath();
+      ctx.arc(200, 200, 100, 0, 360);
+      ctx.stroke();
+    };
+
+    drawCircle();
+
+    window.addEventListener("resize", (event) => {
+      canvas.width = document.body.clientWidth; //document.width is obsolete
+      canvas.height = document.body.clientHeight;
+      drawCircle();
+      console.log('resized')
+    }, true);
+
+  </script>
+</body>
+
+</html>

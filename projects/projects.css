@@ -1,0 +1,9 @@
+article {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+article:hover {
+    background: #000000;
+    box-shadow: 0 0 20px 1px #1fb8ff6f;
+}

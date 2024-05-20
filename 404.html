@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>404 | Eclypse</title>
+    <link rel="icon" type="image/x-icon" href="/media/favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+        body {
+            font-family: "Rubik", sans-serif;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            left: 0;
+            background-color: #000000;
+            background-image: url("/media/svg/stars.svg");
+            background-size: cover;
+            height: 100vh;
+            font-family: "Rubik", sans-serif;
+        }
+
+        /* hide scroolbar */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        #left {
+            width: 20%;
+            position: relative;
+            margin-top: 10%;
+            -webkit-transform: translatex(calc(25vw - 50%));
+            transform: translatex(calc(20vw - 50%));
+        }
+
+        #moon {
+            width: 30%;
+            position: relative;
+            margin-top: 10%;
+            -webkit-transform: translatex(50%);
+            transform: translatex(50%);
+        }
+
+        #right {
+            width: 20%;
+            position: relative;
+            margin-top: 10%;
+            -webkit-transform: translatex(100%);
+            transform: translatex(100%);
+        }
+
+        p:not(footer p) {
+            color: white;
+            padding: 10px;
+            font-size: 40px;
+            margin: 10px;
+        }
+
+        a {
+            margin: 10px;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-radius: 15px;
+            transition: all 0.2s ease-in-out;
+            background-color: #1fb8ff;
+        }
+
+        #text {
+            width: 100%;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+        }
+
+        footer p {
+            color: white
+        }
+    </style>
+</head>
+
+<body>
+    <div id="svg">
+        <object type="image/svg+xml" data="./media/svg/4.svg" id="left"></object>
+        <object type="image/svg+xml" data="./media/svg/moon.svg" id="moon"></object>
+        <object type="image/svg+xml" data="/media/svg/4.svg" id="right"></object>
+    </div>
+    <div id="text">
+        <p id="pnf">Page not found</p>
+        <a href="/">Home</a>
+    </div>
+    <footer>
+        <p>© Maxwell Whitten 2024</p>
+    </footer>
+    <script src="/js/script.js" type="text/javascript"></script>
+</body>
+
+</html>

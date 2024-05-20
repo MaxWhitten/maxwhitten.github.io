@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  left: 0;
+  background-color: #000000;
+  background-image: url("/media/svg/stars.svg");
+  background-size: cover;
+  height: 100vh;
+}
+
+/* hide scroolbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+/* Style the header */
+header {
+  text-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000,
+    0 0 40px #000000, 0 0 50px;
+  text-align: center;
+  font-size: 40px;
+  color: #13c4fa;
+  width: 100vw;
+  left: 0;
+  height: 40vh;
+  margin-top: 0;
+}
+
+#bannertxt {
+  margin-top: 0;
+  padding: 0;
+  -webkit-transform: translateY(calc(90% - 21px));
+  transform: translateY(calc(90% - 21px));
+}
+
+#bannertxt h2,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+#moon {
+  width: 20%;
+  position: absolute;
+  margin-top: 10%;
+  -webkit-transform: translatex(calc(50vw - 50%));
+  transform: translatex(calc(50vw - 50%));
+  z-index: -1;
+}
+
+
+
+
+/* Upper nav bar */
+#upper ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+}
+
+#upper li {
+  float: left;
+  border-radius: 15px;
+}
+
+#upper li a:not(#github) {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+#upper li a:hover:not(.active) {
+  background-color: #111;
+}
+
+#upper .active {
+  background-color: #1fb8ff;
+}
+
+#github {
+  cursor: pointer;
+  padding:5px;
+  width: 47px;
+  border-radius:50px;
+  transition: all 0.2s ease-in-out;
+
+}
+
+#github:hover {
+  background: #2b2b2b;
+}
+
+
+
+
+/* Lower nav bar */
+/* Create two columns/boxes that floats next to each other */
+#lower {
+  width: 100%;
+  background: black;
+  padding: 0;
+  justify-content: center;
+
+}
+
+/* Style the list inside the menu */
+#lower ul {
+  box-shadow: 0 0 50px 5px #121212;
+  font-size: 22px;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#lower li {
+  display: table-cell;
+  width: auto;
+  text-align: center;
+  list-style-type: none;
+  padding: 0px;
+  transition: all 0.2 ease-in-out;
+}
+
+#lower .container {
+  width: 50vw;
+  padding: 10px;
+}
+
+.bg {
+  background-color: black;
+  width: 50vw;
+  margin-top: -47px;
+  padding: 0;
+  height: 47px;
+  left: 0;
+}
+
+#lower li:hover .bg {
+  background-color: #121212;
+  animation-name: navHover;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+#lower li a {
+  text-decoration: none;
+  color: #f1f1f1;
+  padding: 15px;
+  width: 50vw;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+/* Style the footer */
+footer {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  bottom: 0;
+}
+
+
+
+
+/* article styles */
+article {
+
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.709);
+  margin: 20px;
+  border-radius: 15px;
+  border-color: #1fb8ff;
+  border-width: 1px;
+  border-style: solid;
+  color: white;
+}
+
+article h1 {
+  font-size: 100px;
+}
+
+article h2 {
+  font-size: 50px;
+}
+
+.right ul {
+  list-style-type: none;
+}
+
+.right ul li {
+  display: inline;
+}
+
+.center {
+  text-align: center;
+}
+
+article.blog {
+  height: auto;
+  padding-bottom: 2%;
+}
+
+.blog {
+  text-align: center;
+}
+
+.blog p {
+  margin-left: 5%;
+  max-width: 90%;
+}
+
+.left {
+  height: calc(60vh - 40px);
+  margin: 20px;
+  border-radius: 15px;
+  float: left;
+  z-index: -1;
+}
+
+.right {
+  height: calc(60vh - 40px);
+  margin: 20px;
+  border-radius: 15px;
+  float: right;
+  z-index: -1;
+}
+
+
+@media (max-width: 600px) {
+
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@keyframes navHover {
+  0% {
+    margin-left: 50%;
+    width: 0%;
+  }
+
+  100% {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The following is only for docs pages */
+
+#docwrapper {
+  margin-left: 15%;
+  width: 85%;
+  text-align: center;
+  padding-left: 10%;
+  padding-top: 2%;
+  /* background-color: #000000; */
+  /* border-left: #13c4fa solid 2px; */
+  /* border-top: #13c4fa solid 2px; */
+  /* border-top-left-radius: 50px; */
+}
+
+p.doc {
+  color: white;
+  max-width: 90%;
+  font-size: 18px;
+}
+
+#docwrapper footer {
+  text-align: center;
+  color: white;
+  width: 90%;
+  bottom: 0;
+}
+
+#docwrapper h1 {
+  color: white;
+  max-width: 90%;
+  font-size: 40px;
+}
+
+
+
+/* documentation nav bar */
+ul.doc {
+  list-style-type: none;
+  width: 15%;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
+  margin:0;
+  padding:0;
+  border-right:#424242 1px solid;
+  background-color: #000000;
+  /* background-image: url("/media/svg/stars.svg");
+  background-repeat: no-repeat; */
+  background-size: 100vw;
+}
+
+ul.doc li a {
+  display: block;
+  color: #ffffff;
+  padding: 6px 24px;
+  margin: 4px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+ul.doc li p {
+  display: block;
+  color: #ffffff;
+  padding: 16px 24px;
+  margin: 4px 12px;
+  border-radius: 6px;
+  font-size: 30px;
+}
+
+ul.doc li.spacer {
+  height:10px;
+}
+
+ul.doc li a:hover:not(.active) {
+  background-color: #1f1f1fbb;
+  color: white;
+}
+
+ul.doc .active {
+  background-color: #1fb8ff;
+}
