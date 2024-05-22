@@ -52,7 +52,7 @@ h4 {
   margin: 0;
 }
 
-#moon {
+#bgMoon {
   width: 20%;
   position: absolute;
   margin-top: 10%;
@@ -97,9 +97,9 @@ h4 {
 
 #github {
   cursor: pointer;
-  padding:5px;
+  padding: 5px;
   width: 47px;
-  border-radius:50px;
+  border-radius: 50px;
   transition: all 0.2s ease-in-out;
 
 }
@@ -195,7 +195,6 @@ footer {
 
 /* article styles */
 article {
-
   height: 60vh;
   background-color: rgba(0, 0, 0, 0.709);
   margin: 20px;
@@ -279,11 +278,107 @@ article.blog {
 }
 
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.p-menu1 {
+  height: 100%;
+}
 
 
 
 
+/* Hamburger */
+.hamburger1 {
+  height: 45px;
+  margin: 10px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  z-index: 120;
+}
 
+#moonContainer{
+}
+
+#moonMenu {
+  width:45px;
+  z-index: -2;
+  margin: 10px;
+}
+
+#toggle1 {
+  display: none;
+}
+
+#toggle1:checked~.menu1 {
+  height: 340px;
+}
+
+
+/* Menu */
+.menu1 {
+  width: 100%;
+  background-color: #02173F;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: 1fr repeat(4, 0.5fr);
+  grid-row-gap: 25px;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  width: auto;
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  transition: height .4s ease;
+  z-index: 121;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.menu1 a:first-child {
+  margin-top: 40px;
+}
+
+.menu1 a:last-child {
+  margin-bottom: 40px;
+}
+
+.link1 {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  font: 700 20px 'Oswald', sans-serif;
+}
+
+.link1:hover {
+  background-color: #fff;
+  color: rgb(61, 61, 61);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#hamburger {
+  z-index: 5;
+  display: none;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+#overmoon {
+  width:45px;
+  height:45px;
+  margin-left: -45px;
+}
 
 
 
@@ -335,9 +430,9 @@ ul.doc {
   height: 100%;
   overflow: auto;
   z-index: 1;
-  margin:0;
-  padding:0;
-  border-right:#424242 1px solid;
+  margin: 0;
+  padding: 0;
+  border-right: #424242 1px solid;
   background-color: #000000;
   /* background-image: url("/media/svg/stars.svg");
   background-repeat: no-repeat; */
@@ -363,7 +458,7 @@ ul.doc li p {
 }
 
 ul.doc li.spacer {
-  height:10px;
+  height: 10px;
 }
 
 ul.doc li a:hover:not(.active) {
