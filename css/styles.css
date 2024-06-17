@@ -155,7 +155,8 @@ h4 {
   left: 0;
 }
 
-#lower li:hover .bg {
+#lower li:not(.active):hover .bg {
+  cursor: pointer;
   background-color: #121212;
   animation-name: navHover;
   animation-duration: 0.2s;
@@ -163,11 +164,30 @@ h4 {
   animation-timing-function: ease-in-out;
 }
 
+#lower li:not(.active):active a {
+  color: #6b6b6b;
+}
+
+#lower li.active:hover .bg {
+  cursor: not-allowed;
+  background-color: #080808;
+  animation-name: navHover;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+#lower li.active:hover a {
+  color: #323232;
+  cursor: not-allowed;
+}
+
 #lower li a {
   text-decoration: none;
   color: #f1f1f1;
   padding: 15px;
   width: 50vw;
+  transition: all 0.05s ease-in-out;
 }
 
 /* Clear floats after the columns */
@@ -203,6 +223,16 @@ article {
   border-width: 1px;
   border-style: solid;
   color: white;
+}
+
+article.link {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+article.link:hover {
+  background: #000000;
+  box-shadow: 0 0 20px 1px #1fb8ff6f;
 }
 
 article h1 {
@@ -244,15 +274,12 @@ article.blog {
   margin: 20px;
   border-radius: 15px;
   float: left;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
-.right {
-  height: calc(60vh - 40px);
-  margin: 20px;
-  border-radius: 15px;
-  float: right;
-  z-index: -1;
+.desc {
+  padding-left: 20%;
+  max-width: 80%;
 }
 
 
@@ -301,11 +328,8 @@ a {
   z-index: 120;
 }
 
-#moonContainer{
-}
-
 #moonMenu {
-  width:45px;
+  width: 45px;
   z-index: -2;
   margin: 10px;
 }
@@ -375,8 +399,8 @@ button {
 }
 
 #overmoon {
-  width:45px;
-  height:45px;
+  width: 45px;
+  height: 45px;
   margin-left: -45px;
 }
 
