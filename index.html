@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Assembly Line Pins</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="./media/favicon.png" />
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdYu8rNaWsw02kuocKOL4GcnhRAsfrT90&callback=console.debug&libraries=maps,marker&v=beta"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="startWrapper">
+            <div style="--local-text-size: 70px; --local-animation-delay: 0s; --local-animation-duration: 3s;">
+                <p>Josh and Max Present:</p>
+            </div>
+            <div style="--local-text-size: 70px; --local-animation-delay: 3s; --local-animation-duration: 5s;">
+                <p>The Assembly Line: a Cartographical History</p>
+                <p style="transform: translateY(-50px); font-size: 18px; color: var(--text-1); text-shadow: none;">
+                    Google Earth Major Summative - Nationalism and the Industrial Revolution</p>
+            </div>
+        </div>
+        <div id="main" style="--local-animation-delay: 0s; --local-animation-duration: 3s;">
+            <div id="mapWrapper">
+                <div id="map"></div>
+            </div>
+            <div id="sideWrapper" style="background-color: var(--background-color);">
+                <div id="sideWrapperInner">
+                    <div id="blurb">
+                        <span id="blurbText"></span>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <div id="sideRight">
+                        <div class="svg" onclick="togglePic()"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 -960 960 960">
+                                <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                            </svg></div>
+                    </div>
+                    <div id="sideLeft" style="opacity: 0;">
+                        <div class="svg" onclick=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+                            </svg></div>
+                    </div>
+                    <div id="controlsWrapper">
+                        <div id="controls">
+                            <div class="svg" onclick="prev()" style="cursor: not-allowed;"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" id="prev"
+                                    style="fill: var(--text-2)">
+                                    <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
+                                </svg></div>
+                            <span id="location"></span>
+                            <div class="svg" onclick="next()"><svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 -960 960 960" id="next">
+                                    <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+                                </svg></div>
+                        </div>
+                    </div>
+                    <div id="infoWrapper">
+                        <div class="svg" onclick="toggleCite()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <path
+                                    d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
