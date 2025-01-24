@@ -78,6 +78,16 @@ const points = {
     pic: './media/images/highland.webp',
     cite: 'Corporate, Ford. “Highland Park.” Ford Corporate, 2025, corporate.ford.com/articles/history/highland-park.html.'
   }
+  3: {
+    lat: 42.3314,
+    lng: -83.0458 ,
+    zoom: 14,
+    name: "Detroit - Motor City",
+    town: "Detroit, MI",
+    desc: "Detroit became Motor City by Henry Ford bringing the assembly line to the city. And after Henry Ford brought the assembly line many other companies followed suit making factories in the City and made automobiles.",
+    pic: './media/images/detroit.webp',
+    cite: 'Government, Detroit. “Detroit History.” City of Detroit, 2025, detroitmi.gov/departments/detroit-history#:~:text=So%20why%20did%20Detroit%20become,been%20around%20for%20a%20while. '
+  }
 }
 
 var currentPoint = 1;
