@@ -77,7 +77,7 @@ const points = {
     desc: "In September of 1907 Henry Ford bought 130 acres of land. The assembly line for vehicles would be first used in 1913 in Highland Park. Which caused a change in the automotive industry forever as it forced General Motors and Chrysler to follow suit.",
     pic: './media/images/highland.webp',
     cite: 'Corporate, Ford. “Highland Park.” Ford Corporate, 2025, corporate.ford.com/articles/history/highland-park.html.'
-  }
+  },
   3: {
     lat: 42.3314,
     lng: -83.0458 ,
