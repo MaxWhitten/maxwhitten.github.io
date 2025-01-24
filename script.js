@@ -74,7 +74,7 @@ const points = {
     zoom: 14,
     name: "Highland Park Ford Factory",
     town: "Highland Park, MI",
-    desc: "In September of 1907 Henry Ford bought 130 acres of land. The assembly line for vehicles would be first used in 1913 in Highland Park. Which caused a change in the automotive industry forever as it forced General Motors and Chrysler to follow suit.",
+    desc: "ECONOMICS<br><br>In September of 1907 Henry Ford bought 130 acres of land. The assembly line for vehicles would be first used in 1913 in Highland Park. Which caused a change in the automotive industry forever as it forced General Motors and Chrysler to follow suit.",
     pic: './media/images/highland.webp',
     cite: 'Corporate, Ford. “Highland Park.” Ford Corporate, 2025, corporate.ford.com/articles/history/highland-park.html.'
   },
@@ -84,9 +84,19 @@ const points = {
     zoom: 14,
     name: "Detroit - Motor City",
     town: "Detroit, MI",
-    desc: "Detroit became Motor City by Henry Ford bringing the assembly line to the city. And after Henry Ford brought the assembly line many other companies followed suit making factories in the City and made automobiles.",
+    desc: "POLITICS<br><br>Detroit became Motor City by Henry Ford bringing the assembly line to the city. And after Henry Ford brought the assembly line many other companies followed suit making factories in the City and made automobiles.",
     pic: './media/images/detroit.webp',
     cite: 'Government, Detroit. “Detroit History.” City of Detroit, 2025, detroitmi.gov/departments/detroit-history#:~:text=So%20why%20did%20Detroit%20become,been%20around%20for%20a%20while. '
+  },
+  4: {
+    lat: 41.88335772257865,
+    lng: -87.64405117430562,
+    zoom: 14,
+    name: "Henry Ford's inspiration for assembly line",
+    town: "Detroit, MI",
+    desc: "SOCIETY<br><br>Henry Ford was inspired by the meatpacking factories in Chicago and a grain belt conveyor. So he then broke down the process to assemble the Model T into 84 different steps. Then each worker was trained to do just one of the steps. And in 1913 the first assembly line was created meaning Ford was able to produce cars at a record breaking rate. ",
+    pic: './media/images/chicago.webp',
+    cite: 'S, P B. “A Science Odyssey: People and Discoveries: Ford Installs First Moving Assembly Line.” PBS, Public Broadcasting Service, 2025, www.pbs.org/wgbh/aso/databank/entries/dt13as.html#:~:text=Ford%20was%20inspired%20by%20the,T%20into%2084%20distinct%20steps.'
   }
 }
 
