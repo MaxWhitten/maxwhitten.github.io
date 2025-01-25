@@ -121,6 +121,9 @@ body {
 #blurb {
     margin: 0;
     padding: 0;
+    height: 1px;
+    flex-grow: 1;
+    overflow:scroll;
 }
 
 #blurb span {
@@ -132,7 +135,6 @@ body {
     height: calc(50vh - 40px);
     display: flex;
     flex-direction: column;
-    overflow: scroll;
 }
 
 .svg {
@@ -227,4 +229,8 @@ body {
 
 #infoWrapper .svg {
     pointer-events: all;
+}
+
+#div {
+    height: 48px;
 }
