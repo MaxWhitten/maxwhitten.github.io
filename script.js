@@ -74,7 +74,7 @@ const points = {
     zoom: 14,
     name: "Highland Park Ford Factory",
     town: "Highland Park, MI",
-    desc: "ECONOMICS<br>Ford purchased land and money changed hadns<br><br>In September of 1907 Henry Ford bought 130 acres of land. The assembly line for vehicles would be first used in 1913 in Highland Park. Which caused a change in the automotive industry forever as it forced General Motors and Chrysler to follow suit.",
+    desc: "ECONOMICS<br>Ford purchased land and money changed hands<br><br>In September of 1907 Henry Ford bought 130 acres of land. The assembly line for vehicles would be first used in 1913 in Highland Park. Which caused a change in the automotive industry forever as it forced General Motors and Chrysler to follow suit.",
     pic: './media/images/highland.webp',
     cite: 'Corporate, Ford. “Highland Park.” Ford Corporate, 2025, corporate.ford.com/articles/history/highland-park.html.'
   },
@@ -138,6 +138,7 @@ function prev() {
   currentPoint--;
   const point = points[currentPoint];
   document.getElementById('blurbText').innerHTML = point.desc;
+  document.getElementById('blurbText').scrollTo(0,0);
   document.getElementById('location').innerHTML = point.town;
   moveTo({ lat: point.lat, lng: point.lng }, point.zoom);
 }
@@ -156,6 +157,7 @@ function next() {
   currentPoint++;
   const point = points[currentPoint];
   document.getElementById('blurbText').innerHTML = point.desc;
+  document.getElementById('blurbText').scrollTo(0,0);
   document.getElementById('location').innerHTML = point.town;
   moveTo({ lat: point.lat, lng: point.lng }, point.zoom);
 }
