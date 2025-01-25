@@ -138,7 +138,7 @@ function prev() {
   currentPoint--;
   const point = points[currentPoint];
   document.getElementById('blurbText').innerHTML = point.desc;
-  document.getElementById('blurbText').scrollTo(0,0);
+  document.getElementById('blurb').scrollTo(0, 0);
   document.getElementById('location').innerHTML = point.town;
   moveTo({ lat: point.lat, lng: point.lng }, point.zoom);
 }
